@@ -384,7 +384,7 @@ RegisterNetEvent('qb-trucker:client:GetInTrunk', function()
     if not IsPedInAnyVehicle(PlayerPedId()) then
         local pos = GetEntityCoords(PlayerPedId(), true)
         local vehicle = GetVehiclePedIsIn(PlayerPedId(), true)
-        if isTruckerVehicle(vehicle) and CurrentPlate == QBCore.Functions.GetPlate(vehicle) then
+        if isTruckerVehicle(vehicle) then -- and CurrentPlate == QBCore.Functions.GetPlate(vehicle) 
             local trunkpos = GetOffsetFromEntityInWorldCoords(vehicle, 0, -2.5, 0)
             if #(pos - vector3(trunkpos.x, trunkpos.y, trunkpos.z)) < 1.5 and not isWorking then
                 isWorking = true
