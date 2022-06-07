@@ -92,7 +92,7 @@ Config.Locations = {
         },
         [20] = {
             name = "hardware",
-            coords = vector4(89.33, -1745.44, 30.08, 143.5),
+            coords = vector4(101.45, -1730.81, 28.92, 143.5),
         },
         [21] = {
             name = "hardware2",
